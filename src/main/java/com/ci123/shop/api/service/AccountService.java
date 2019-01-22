@@ -3,9 +3,11 @@ package com.ci123.shop.api.service;
 import com.ci123.shop.api.domain.Account;
 import com.ci123.shop.api.domain.IAccountDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AccountService implements IAccountService {
     @Autowired
     IAccountDAO accountDAO;
